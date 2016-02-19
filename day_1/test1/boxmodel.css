@@ -1,0 +1,9 @@
+ .box {
+    height: 150px;
+    background: #654678;
+}
+
+.content {
+  height: 100px;
+  background: skyblue;
+ }
