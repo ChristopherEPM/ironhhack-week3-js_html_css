@@ -2,10 +2,6 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// function doFight(attacker,victim)
-// {
-//   victim.health -= attacker.strength;
-// }
 var Saxon = function(){
   this.health = getRandom(10, 40);
   this.strength = getRandom(1,9);
@@ -58,10 +54,8 @@ var Viking = function(name){
     }
   }
 
-
-
-
 };
+
 
 v1 = new Viking("Viki");
 console.log(v1);
@@ -72,35 +66,3 @@ console.log("viki: " +v1.health);
 console.log("olaf: " +v2.health);
 v1.useRecoveryPotion();
 v2.useRecoveryPotion();
-
-
-
-
-
-
-
-
-
-
-
-
-// var Car = function(model, noise){//constructores con mayuscula
-//   this.model = model;
-//   this.noise = noise;
-//   this.wheels_number = 4;
-//   var doors = 3 //no sera accesible desde el prototipo
-//
-//   this.makeNoise = function(){
-//     console.log(this.noise);
-//
-//   }
-//   this.howManytDoors = function(){
-//      console.log(doors);// hoisting, mira el modelo superior anque no este declarada la pude usar
-//   }
-// }
-// Car.prototype.makeNoise = function(){
-//    console.log(this.noise);
-//    // aqui no podriasmos obtener this.doors, al no estar definido
-// }
-// var renault = new Car("renault","mook mook");
-// renault.makeNoise(); //primero busca si tiene uno dentro.. y sino lo tine usa el prototipo
