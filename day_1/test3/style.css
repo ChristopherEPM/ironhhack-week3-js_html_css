@@ -1,0 +1,20 @@
+.box {
+  background: #2db34a;
+  text-align: center;
+  float: left;
+  margin: 1.85%;
+  width: 30%;
+}
+
+.box-set {
+  overflow: auto;
+}
+
+.box-set:before, .box-set:after {
+  content: "";
+  display: table;
+}
+
+.box-set:after {
+  clear: both;
+}
